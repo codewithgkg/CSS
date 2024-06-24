@@ -2,72 +2,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex Direction</title>
-    <!-- HINT:
-  https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
-  https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
-  -->
-    <style>
-        .container {
-            color: white;
-            border: 5px solid gold;
-            display: inline-flex;
-            flex-direction: column;
+  <meta charset="UTF-8">
+  <meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Fundamentals</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
 
-        }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
 
-        .container > *{
-            flex-basis: 100px;
-        }
-
-        /*
-Select all the elements that are the direct
-children of the .container class.
-    */
-
-        .red {
-            background-color: #eb4d4b;
-        }
-
-        .orange {
-            background-color: #f0932b;
-        }
-
-        .yellow {
-            background-color: #f6e58d;
-        }
-
-        .green {
-            background-color: #6ab04c;
-        }
-
-        .blue {
-            background-color: #4834d4;
-        }
-
-        .indigo {
-            background-color: #30336b;
-        }
-
-        .purple {
-            background-color: #be2edd;
-        }
-    </style>
+    .item {
+      width: 200px;
+      margin: 20px;
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      line-height: 2;
+      font-size: 24px;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="red">Red</div>
-        <div class="orange">Orange</div>
-        <div class="yellow">Yellow</div>
-        <div class="green">Green</div>
-        <div class="blue">Blue</div>
-        <div class="indigo">Indigo</div>
-        <div class="purple">Purple</div>
-    </div>
+  <div class="container">
+    <h1>Grid Sizing</h1>
+    <a class="item" href="./fixed-size.html">Fixed Size</a>
+    <a class="item" href="./auto-size.html">Auto Size</a>
+    <a class="item" href="./fractional-size.html">Fractional Size</a>
+    <a class="item" href="./minmax-size.html">MinMax Size</a>
+    <a class="item" href="./repeat.html">Repeat</a>
+    <a class="item" href="./test.html">Test</a>
 
+
+  </div>
 </body>
 
 </html>
